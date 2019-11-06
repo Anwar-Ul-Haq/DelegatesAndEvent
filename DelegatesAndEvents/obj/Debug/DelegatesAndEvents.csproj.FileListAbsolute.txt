@@ -1,0 +1,8 @@
+D:\Wahlin Group\Courses\PluralSight\C# Events and Delegates\Module2\Code\Before\DelegatesAndEvents\DelegatesAndEvents\bin\Debug\DelegatesAndEvents.exe.config
+D:\PS\C# Events, Delegates and Lambdas\2\Code\Before\DelegatesAndEvents\DelegatesAndEvents\bin\Debug\DelegatesAndEvents.exe.config
+D:\PS\C# Events, Delegates and Lambdas\2\Code\Before\DelegatesAndEvents\DelegatesAndEvents\bin\Debug\DelegatesAndEvents.exe
+D:\PS\C# Events, Delegates and Lambdas\2\Code\Before\DelegatesAndEvents\DelegatesAndEvents\bin\Debug\DelegatesAndEvents.pdb
+D:\PS\C# Events, Delegates and Lambdas\2\Code\Before\DelegatesAndEvents\DelegatesAndEvents\obj\Debug\DelegatesAndEvents.csproj.CoreCompileInputs.cache
+D:\PS\C# Events, Delegates and Lambdas\2\Code\Before\DelegatesAndEvents\DelegatesAndEvents\obj\Debug\DelegatesAndEvents.exe
+D:\PS\C# Events, Delegates and Lambdas\2\Code\Before\DelegatesAndEvents\DelegatesAndEvents\obj\Debug\DelegatesAndEvents.pdb
+D:\PS\C# Events, Delegates and Lambdas\2\Code\Before\DelegatesAndEvents\DelegatesAndEvents\obj\Debug\DelegatesAndEvents.csprojAssemblyReference.cache
