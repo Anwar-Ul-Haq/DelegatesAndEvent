@@ -21,8 +21,8 @@ namespace DelegatesAndEvents
             //del1(5, WorkType.GoToMeetings);
 
             var worker = new Worker();
-            worker.WorkPerformed += new EventHandler<WorkPerformedEventArgs>(worker_WorkPerformed);
-            worker.WorkCompleted += new EventHandler(worker_WorkCompleted);
+            worker.WorkPerformed += worker_WorkPerformed;
+            worker.WorkCompleted += worker_WorkCompleted;
 
             worker.DoWork(8,WorkType.Golf);
 
