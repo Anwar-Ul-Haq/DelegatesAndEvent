@@ -21,8 +21,24 @@ namespace DelegatesAndEvents
             //del1(5, WorkType.GoToMeetings);
 
             var worker = new Worker();
-            worker.WorkPerformed += worker_WorkPerformed;
-            worker.WorkCompleted += worker_WorkCompleted;
+            worker.WorkPerformed += (s, e) =>
+            {
+
+                Console.WriteLine("Worked " + e.Hours);
+                Console.WriteLine("Some other value");
+            };
+
+           worker.WorkCompleted += (s,e)=> Console.WriteLine("Worker is done");
+
+            //worker.WorkCompleted += delegate(object sender, EventArgs e)
+            //{ 
+            //    Console.WriteLine("Worker is done");
+            //};
+
+
+
+
+
 
             worker.DoWork(8,WorkType.Golf);
 
@@ -31,15 +47,15 @@ namespace DelegatesAndEvents
            
         }
 
-        private static void worker_WorkCompleted(object sender, EventArgs e)
-        {
-            Console.WriteLine("Worker is done");
-        }
+        //private static void worker_WorkCompleted(object sender, EventArgs e)
+        //{
+        //    Console.WriteLine("Worker is done");
+        //}
 
-        private static void worker_WorkPerformed(object sender, WorkPerformedEventArgs e)
-        {
-            Console.WriteLine("Hours Worked " + e.Hours);
-        }
+        //private static void worker_WorkPerformed(object sender, WorkPerformedEventArgs e)
+        //{
+        //    Console.WriteLine("Hours Worked " + e.Hours);
+        //}
 
 
         //public static void DoWork(WorkPerfromedHandler del)
