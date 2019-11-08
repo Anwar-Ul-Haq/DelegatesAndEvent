@@ -21,9 +21,17 @@ namespace DelegatesAndEvents
             var data = new ProcessData();
 
             data.Process(2, 3, multipleDel);
-            
-            
-            
+
+            Action<int, int> myAction = (x, y) => Console.WriteLine(x+y);
+
+            Action<int, int> myMultipleyAction = (x, y) => Console.WriteLine(x * y);
+
+            data.ProcessAction(2, 3, myMultipleyAction);
+
+
+
+
+
             //var del1 = new WorkPerfromedHandler(WorkPerformed1);
             //var del2 = new WorkPerfromedHandler(WorkPerformed2);
             //var del3 = new WorkPerfromedHandler(WorkPerformed3);
