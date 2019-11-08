@@ -7,10 +7,23 @@ using System.Threading.Tasks;
 namespace DelegatesAndEvents
 {
 
+    public delegate int BizRulesDelegate(int x, int y);
+
     class Program
     {
         static void Main(string[] args)
         {
+
+            BizRulesDelegate addDel = (x, y) => x + y;
+            BizRulesDelegate multipleDel = (x, y) => x * y;
+
+
+            var data = new ProcessData();
+
+            data.Process(2, 3, multipleDel);
+            
+            
+            
             //var del1 = new WorkPerfromedHandler(WorkPerformed1);
             //var del2 = new WorkPerfromedHandler(WorkPerformed2);
             //var del3 = new WorkPerfromedHandler(WorkPerformed3);
