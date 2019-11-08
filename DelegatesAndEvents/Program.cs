@@ -14,21 +14,23 @@ namespace DelegatesAndEvents
         static void Main(string[] args)
         {
 
+            var data = new ProcessData();
+
             BizRulesDelegate addDel = (x, y) => x + y;
             BizRulesDelegate multipleDel = (x, y) => x * y;
 
-
-            var data = new ProcessData();
-
             data.Process(2, 3, multipleDel);
 
+            Func<int, int, int> funcAddDel = (x, y) => x + y;
+            Func<int, int, int> funcMultipleDel = (x, y) => x * y;
+            data.ProcessFunc(6, 6, funcMultipleDel);
+
+
+
             Action<int, int> myAction = (x, y) => Console.WriteLine(x+y);
-
             Action<int, int> myMultipleyAction = (x, y) => Console.WriteLine(x * y);
-
             data.ProcessAction(2, 3, myMultipleyAction);
-
-
+            
 
 
 
